@@ -31,6 +31,14 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
+    css: {
+      preprocessorOptions: {
+          // scss: {
+          //     api: 'modern-compiler',
+          //     // additionalData: `@import "@/assets/scss/global.scss";`,
+          // },
+      },
+    },
     extensions: [
       '.js',
       '.json',
@@ -46,8 +54,9 @@ export default defineConfig({
   },
   css: {
     preprocessorOptions: {
-      sass: {
+      scss: {
         api: 'modern-compiler',
+        additionalData: `@use "@/assets/scss/global.scss";`,
       },
     },
   },
