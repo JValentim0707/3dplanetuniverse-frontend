@@ -11,6 +11,7 @@
         <HRightIcon class="h-right-icon"/>
       </div>
     </div>
+    <div class="font-secundary text-no-data">Nenhum Destaque Encontrado</div>
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import HLeftIcon from '@/icons/HLeftIcon.vue';
 <style lang="scss">
 .container-home {
   display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   .subheader-home {
@@ -59,6 +61,15 @@ import HLeftIcon from '@/icons/HLeftIcon.vue';
       position: relative;
       z-index: 3;
     }
+  }
+
+  .text-no-data {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #020202;
   }
 }
 </style>

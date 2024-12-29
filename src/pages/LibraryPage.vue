@@ -11,7 +11,7 @@ import { useRouter } from 'vue-router';
 const router = useRouter()
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .contaniner-login {
   background-color: white;
   flex-direction: column;
